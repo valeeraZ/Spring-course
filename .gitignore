@@ -1,0 +1,4 @@
+# Project exclude paths
+/Initialize-bean/target/
+/MyIocContainer/target/
+/Spring-IoC-exemple/target/

@@ -6,9 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MyIocContainer" />
-        <module name="Spring-IoC-exemple" />
-        <module name="Initialize-bean" />
+        <module name="5-Scope-Web" />
+        <module name="1-Spring-IoC-exemple" />
+        <module name="6-Scope-Custom" />
+        <module name="0-MyIocContainer" />
+        <module name="3-DI-Bean" />
+        <module name="4-Scope-Singleton-Prototype" />
+        <module name="2-Initialize-bean" />
       </profile>
     </annotationProcessing>
   </component>

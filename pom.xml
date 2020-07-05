@@ -9,9 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>MyIocContainer</module>
-        <module>Spring-IoC-exemple</module>
-        <module>Initialize-bean</module>
+        <module>0-MyIocContainer</module>
+        <module>1-Spring-IoC-exemple</module>
+        <module>2-Initialize-bean</module>
+        <module>3-DI-Bean</module>
+        <module>4-Scope-Singleton-Prototype</module>
+        <module>5-Scope-Web</module>
+        <module>6-Scope-Custom</module>
     </modules>
     <dependencies>
         <dependency>

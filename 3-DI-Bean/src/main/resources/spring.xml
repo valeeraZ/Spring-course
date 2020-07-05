@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="AnotherBean" id="anotherBean"/>
+
+    <bean class="Bean" id="bean">
+        <constructor-arg index="0" name="anotherBean" type="AnotherBean" ref="anotherBean"/>
+        <constructor-arg index="1" name="text" type="java.lang.String" value="hello"/>
+
+        <property name="anotherBean1">
+          <bean class="AnotherBean"></bean>
+        </property>
+        <property name="text1" value="world" />
+
+        <property name="stringList">
+            <list>
+                <value>first of list</value>
+                <value>second of list</value>
+            </list>
+        </property>
+        <property name="anotherBeanList">
+            <list>
+                <ref bean="anotherBean"/>
+                <ref bean="anotherBean" />
+            </list>
+        </property>
+
+        <property name="stringSet">
+            <set>
+                <value>a value of set</value>
+                <value>another value of set</value>
+            </set>
+        </property>
+        <property name="anotherBeanSet">
+            <set>
+                <ref bean="anotherBean" />
+                <ref bean="anotherBean" />
+                <!--实际上写一个就行，因为Set不允许重复元素-->
+            </set>
+        </property>
+
+        <property name="stringMap">
+            <map>
+                <entry key="firstString" value="first of map"/>
+                <entry key="secondString" value="second of map"/>
+            </map>
+        </property>
+        <property name="anotherBeanMap">
+            <map>
+                <entry key="firstBean" value-ref="anotherBean"/>
+                <entry key="secondBean" value-ref="anotherBean" />
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="aProp">PROP</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+    <!--<bean class="Bean" id="bean"
+    c:anotherBean-ref="anotherBean" c:text="hello"
+    p:anotherBean1-ref="anotherBean" p:text1="world"/>-->
+</beans>

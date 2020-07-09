@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="5-Scope-Web" />
+        <module name="8-Init-Destroy-Bean" />
         <module name="1-Spring-IoC-exemple" />
+        <module name="7-Lazy-Initialize" />
         <module name="6-Scope-Custom" />
         <module name="0-MyIocContainer" />
         <module name="3-DI-Bean" />

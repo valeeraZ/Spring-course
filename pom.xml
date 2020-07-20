@@ -18,6 +18,8 @@
         <module>6-Scope-Custom</module>
         <module>7-Lazy-Initialize</module>
         <module>8-Init-Destroy-Bean</module>
+        <module>9-Inheritance</module>
+        <module>10-Annotations</module>
     </modules>
     <dependencies>
         <dependency>

@@ -11,8 +11,10 @@
         <module name="1-Spring-IoC-exemple" />
         <module name="7-Lazy-Initialize" />
         <module name="6-Scope-Custom" />
+        <module name="10-Annotations" />
         <module name="0-MyIocContainer" />
         <module name="3-DI-Bean" />
+        <module name="9-Inheritance" />
         <module name="4-Scope-Singleton-Prototype" />
         <module name="2-Initialize-bean" />
       </profile>
